@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">POCAndroidAnimJetpackCompose</string>
+    <string name="title_activity_rotate">My Compose App</string>
+</resources>
