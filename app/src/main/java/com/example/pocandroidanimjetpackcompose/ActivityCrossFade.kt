@@ -37,7 +37,10 @@ class ActivityCrossFade : AppCompatActivity() {
 
         Surface(color = Color.White, modifier = Modifier.fillMaxHeight().fillMaxWidth()) {
             Column(
-                modifier = Modifier.fillMaxHeight().fillMaxWidth().padding(bottom = 100.dp, start = 16.dp, top = 16.dp, end = 16.dp),
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .fillMaxWidth()
+                    .padding(bottom = 100.dp, start = 16.dp, top = 16.dp, end = 16.dp),
                 horizontalGravity = Alignment.CenterHorizontally
             ) {
                 Button(onClick = { animation.value = "B"}) {
@@ -49,12 +52,22 @@ class ActivityCrossFade : AppCompatActivity() {
 
                 val myImage = imageResource(id = R.drawable.header)
                 val myImage2 = imageResource(id = R.drawable.nature)
-                val imageModifier = Modifier.padding(top = 32.dp).preferredHeightIn(maxHeight = 180.dp).fillMaxWidth().clip(shape = RoundedCornerShape(4.dp))
+                val imageModifier = Modifier
+                    .padding(top = 32.dp)
+                    .preferredHeightIn(maxHeight = 180.dp)
+                    .fillMaxWidth()
+                    .clip(shape = RoundedCornerShape(4.dp))
                 
                 Crossfade(current = animation.value) { screen ->
                     when (screen) {
-                        "B" -> Image(asset = myImage, contentScale =  ContentScale.Crop, modifier = imageModifier)
-                        "C" -> Image(asset = myImage2, contentScale =  ContentScale.Crop, modifier = imageModifier)
+                        "B" -> Image(
+                            asset = myImage,
+                            contentScale =  ContentScale.Crop,
+                            modifier = imageModifier)
+                        "C" -> Image(
+                            asset = myImage2,
+                            contentScale =  ContentScale.Crop,
+                            modifier = imageModifier)
                     }
                 }
             }

@@ -35,12 +35,19 @@ class ActivityOpacity : AppCompatActivity() {
 
         Surface(color = Color.White, modifier = Modifier.fillMaxHeight().fillMaxWidth()) {
             Column(
-                modifier = Modifier.fillMaxHeight().fillMaxWidth().padding(bottom = 100.dp, start = 16.dp, top = 16.dp, end = 16.dp),
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .fillMaxWidth()
+                    .padding(bottom = 100.dp, start = 16.dp, top = 16.dp, end = 16.dp),
                 horizontalGravity = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Bottom
             ) {
                 val opacity = animate(if (animation.value) 0.1f else 1f)
-                Canvas(modifier = Modifier.drawOpacity(opacity).preferredSize(100.dp).clickable(onClick = { animation.value = animation.value != true })) {
+                Canvas(
+                    modifier = Modifier
+                        .drawOpacity(opacity)
+                        .preferredSize(100.dp)
+                        .clickable(onClick = { animation.value = animation.value != true })) {
                     drawRect(color = purple200)
                 }
             }

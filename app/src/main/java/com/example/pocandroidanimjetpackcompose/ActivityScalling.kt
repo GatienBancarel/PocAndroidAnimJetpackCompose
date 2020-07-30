@@ -37,12 +37,19 @@ class ActivityScalling : AppCompatActivity() {
 
         Surface(color = Color.White, modifier = Modifier.fillMaxHeight().fillMaxWidth()) {
             Column(
-                    modifier = Modifier.fillMaxHeight().fillMaxWidth().padding(bottom = 100.dp, start = 16.dp, top = 16.dp, end = 16.dp),
+                    modifier = Modifier
+                        .fillMaxHeight()
+                        .fillMaxWidth()
+                        .padding(bottom = 100.dp, start = 16.dp, top = 16.dp, end = 16.dp),
                     horizontalGravity = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Bottom
             ) {
                 val height : Dp = animate(if (animation.value) 200.dp else 100.dp)
-                Canvas(modifier = Modifier.preferredSize(height).clickable(onClick = { animation.value = animation.value != true })) {
+                Canvas(
+                    modifier = Modifier
+                        .preferredSize(height)
+                        .clickable(onClick = { animation.value = animation.value != true })
+                ) {
                     drawRect(color = purple200)
                 }
             }

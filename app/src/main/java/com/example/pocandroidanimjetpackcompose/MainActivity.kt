@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             Column(modifier = Modifier.padding()) {
                 Button("Animation Rotate", Intent(applicationContext, ActivityRotate::class.java))
                 Button("Animation Scalling", Intent(applicationContext, ActivityScalling::class.java))
-                Button("Few Animations", Intent(applicationContext, ActivityFewAnimations::class.java))
+                Button("Animation Transition keyframes", Intent(applicationContext, ActivityTransitionKeyframes::class.java))
                 Button("Animation Opacity", Intent(applicationContext, ActivityOpacity::class.java))
                 Button("Animation CrossFade", Intent(applicationContext, ActivityCrossFade::class.java))
                 Button("Animation Translation", Intent(applicationContext, ActivityTranslation::class.java))

@@ -22,12 +22,12 @@ import androidx.ui.unit.dp
 import com.example.pocandroidanimjetpackcompose.ui.POCAndroidAnimJetpackComposeTheme
 import com.example.pocandroidanimjetpackcompose.ui.purple200
 
-class ActivityFewAnimations : AppCompatActivity() {
+class ActivityTransitionKeyframes : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             POCAndroidAnimJetpackComposeTheme {
-                FewAnimations()
+                TransitionKeyframes()
             }
         }
     }
@@ -68,12 +68,15 @@ class ActivityFewAnimations : AppCompatActivity() {
     }
 
     @Composable
-    fun FewAnimations() {
+    fun TransitionKeyframes() {
         val animation = state { false }
 
         Surface(color = Color.White, modifier = Modifier.fillMaxHeight().fillMaxWidth()) {
             Column(
-                modifier = Modifier.fillMaxHeight().fillMaxWidth().padding(bottom = 100.dp, start = 16.dp, top = 16.dp, end = 16.dp),
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .fillMaxWidth()
+                    .padding(bottom = 100.dp, start = 16.dp, top = 16.dp, end = 16.dp),
                 horizontalGravity = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Bottom
             ) {
@@ -86,7 +89,9 @@ class ActivityFewAnimations : AppCompatActivity() {
                     }
                 ) { state ->
                     Canvas(
-                        modifier = Modifier.preferredSize(state[widthKey], state[heightKey]).clickable(onClick = { animation.value = true })
+                        modifier = Modifier
+                            .preferredSize(state[widthKey], state[heightKey])
+                            .clickable(onClick = { animation.value = true })
                     ) {
                         drawRect(color = purple200)
                     }

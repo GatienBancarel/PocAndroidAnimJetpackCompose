@@ -58,7 +58,10 @@ class ActivityTranslation : AppCompatActivity() {
 
         Surface(color = Color.White, modifier = Modifier.fillMaxHeight().fillMaxWidth()) {
             Column(
-                modifier = Modifier.fillMaxHeight().fillMaxWidth().padding(bottom = 100.dp, start = 16.dp, top = 16.dp, end = 16.dp),
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .fillMaxWidth()
+                    .padding(bottom = 100.dp, start = 16.dp, top = 16.dp, end = 16.dp),
                 horizontalGravity = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Bottom
             ) {
@@ -71,7 +74,10 @@ class ActivityTranslation : AppCompatActivity() {
                     }
                 ) { state ->
                     Canvas(
-                        modifier = Modifier.drawLayer(translationY = state[heightKey]).preferredSize(100.dp).clickable(onClick = { animation.value = animation.value != true })
+                        modifier = Modifier
+                            .drawLayer(translationY = state[heightKey])
+                            .preferredSize(100.dp)
+                            .clickable(onClick = { animation.value = animation.value != true })
                     ) {
                         drawRect(color = purple200)
                     }

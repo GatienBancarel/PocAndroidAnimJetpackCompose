@@ -13,7 +13,7 @@
         <activity android:name=".ActivityTranslation" />
         <activity android:name=".ActivityCrossFade" />
         <activity android:name=".ActivityOpacity" />
-        <activity android:name=".ActivityFewAnimations" />
+        <activity android:name=".ActivityTransitionKeyframes" />
         <activity android:name=".ActivityScalling" />
         <activity android:name=".MainActivity2" />
         <activity android:name=".ActivityRotate" />

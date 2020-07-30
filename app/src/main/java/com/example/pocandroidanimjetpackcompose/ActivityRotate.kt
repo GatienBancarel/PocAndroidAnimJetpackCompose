@@ -63,7 +63,10 @@ class ActivityRotate : AppCompatActivity() {
 
         Surface(color = Color.White, modifier = Modifier.fillMaxHeight().fillMaxWidth()) {
             Column(
-                    modifier = Modifier.fillMaxHeight().fillMaxWidth().padding(bottom = 100.dp, start = 16.dp, top = 16.dp, end = 16.dp),
+                    modifier = Modifier
+                        .fillMaxHeight()
+                        .fillMaxWidth()
+                        .padding(bottom = 100.dp, start = 16.dp, top = 16.dp, end = 16.dp),
                     horizontalGravity = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Bottom
             ) {
