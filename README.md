@@ -91,7 +91,7 @@ Pour cela je déclare une variable "animation" qui a pour état "false".
 val animation = state { false }
 ```
 
-On défini ensuite l'animation dans una variable "height".
+On défini ensuite l'animation dans une variable "height".
 ```kotlin
 val height : Dp = animate(if (animation.value) 200.dp else 100.dp)
 ```
@@ -222,7 +222,7 @@ Pour cela je déclare une variable "animation" qui a pour état "false".
 val animation = state { false }
 ```
 
-On défini ensuite l'animation dans una variable "opacity".
+On défini ensuite l'animation dans une variable "opacity".
 ```kotlin
 val opacity = animate(if (animation.value) 0.1f else 1f)
 ```
@@ -257,7 +257,7 @@ Lorsque notre variable "animation" passe à l'état "true", l'animation se décl
 
 ## Animation CrossFade
 
-<img src="app/src/main/res/screenshot/116795334_3244942152242338_1083022798612916964_n.jpg" width="300"/>
+<img src="app/src/main/res/screenshot/116341666_3284964204898520_4757298297056742224_n.jpg" width="300"/>
 <img src="app/src/main/res/screenshot/116344405_351469416263194_3038375841975840716_n.jpg" width="300"/>
 <img src="app/src/main/res/screenshot/116342837_762384287862799_1996488161703516430_n.jpg" width="300"/>
 
