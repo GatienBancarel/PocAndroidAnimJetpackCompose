@@ -258,8 +258,8 @@ Lorsque notre variable "animation" passe à l'état "true", l'animation se décl
 ## Animation CrossFade
 
 <img src="app/src/main/res/screenshot/116341666_3284964204898520_4757298297056742224_n.jpg" width="300"/>
-<img src="app/src/main/res/screenshot/116344405_351469416263194_3038375841975840716_n.jpg" width="300"/>
-<img src="app/src/main/res/screenshot/116342837_762384287862799_1996488161703516430_n.jpg" width="300"/>
+<img src="app/src/main/res/screenshot/116863875_880127049182769_8036509439557921628_n.jpg" width="300"/>
+<img src="app/src/main/res/screenshot/116355933_437754123868552_5809368345314456884_n.jpg" width="300"/>
 
 Cette animation va nous permettre de passer d'une vue à une autre. 
 
