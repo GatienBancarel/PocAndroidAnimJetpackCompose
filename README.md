@@ -317,7 +317,7 @@ On appel ensuite CrossFade qui va définir une vue suivant l'état de animation.
 
 ## Animation Translation
 
-<img src="app/src/main/res/screenshot/116588269_1519113798262057_4363075411007264135_n.jpg" width="300"/>
+<img src="app/src/main/res/screenshot/116431750_898163997259097_2079803218821508830_n.jpg" width="300"/>
 
 Cette animation va nous permettre de faire faire une translation vers le haut à notre objet.
 
@@ -390,7 +390,7 @@ Lorsque cette variable passe à "true" notre objet va passer de notre état 1 à
 ## Evaluator Color
 
 <img src="app/src/main/res/screenshot/116526234_924916654686281_1497070958703800177_n.jpg" width="300"/>
-<img src="app/src/main/res/screenshot/116526234_924916654686281_1497070958703800177_n.jpg" width="300"/>
+<img src="app/src/main/res/screenshot/116582218_354836555507570_7419484192030648703_n_n.jpg" width="300"/>
 
 Cette animation va nous permettre de faire une interpolation entre deux couleur pendant la durée de l'animation.
 
